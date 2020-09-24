@@ -1,0 +1,275 @@
+@import '_style_guide';
+
+nav{
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0.5px 10px rgb(211, 211, 211);
+
+    z-index: 2;
+
+    position: fixed;
+    top: 0;
+
+    ul{
+        padding: 0;
+        
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        min-width: 500px;
+        margin: auto;
+        height: 50px;
+        line-height: 50px;
+
+        li{
+            list-style: none;
+            display: block;
+            width: 200px;
+            text-align: center;
+            // margin: 0 60px;
+        }
+
+        li a{
+            text-decoration: none;
+            transition: .2s;
+        }
+
+        li:hover a{
+            font-weight: 600;
+            color: rgb(103, 161, 48);
+        }
+    }
+}
+
+
+
+.top_banner{
+
+    padding: 50px 0 0;
+
+    background-image: url('../image/about_00.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100%;
+    height: 600px;
+
+    .mask{
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+    }
+    
+    .mask:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+
+#seto_art{
+    
+    .container{
+        padding: 50px 0 30px;
+        width: 800px;
+        margin: auto;
+
+        .txt_group{
+            padding: 0 0 10px ;
+            text-align: center;
+        }
+
+        .swiper-container {
+            width: 100%;
+
+            .swiper-button-next{
+                    --swiper-theme-color: white;
+            }
+
+            .swiper-button-prev{
+                    --swiper-theme-color: white;
+            }
+        }
+        
+        h5{
+            padding: 10px 0 0;
+            text-align: center;
+        }
+    }
+}
+
+
+#season{
+    .container{
+        padding: 50px 0 30px;
+        width: 1000px;
+        margin: auto;
+        text-align: center;
+
+
+        .item_wrap{
+            display: flex;
+            padding: 10px 0;
+
+            .item{
+                margin: 0 5px 30px;
+
+                img{
+                    transition: .3s;
+                }
+
+                img:hover{
+                    opacity: 0.8;
+                }
+
+                .txt_group{
+                    h4{
+                        margin: 5px 0 0 ;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    .info_group{
+        padding: 30px 0;
+
+        width: 500px;
+        margin: auto;
+        text-align: center;
+        // background-color: grey;
+
+        .txt_group{
+            // background-color: hotpink;
+            margin: 0 0 20px;
+        }
+
+        .sns{
+            a{
+                margin: 0 10px;
+
+                img{
+                    opacity: 1;
+                    transition: .3s;
+                }
+            }
+
+            a:hover img{
+                opacity: .6;
+            }
+        }
+    }
+
+    p{
+        color: #67737E;
+        font-size: 12px;
+        padding: 0 0 10px;
+        width: 200px;
+        margin: auto;
+        text-align: center;
+
+    }
+
+}
+
+
+#top{
+    a{
+        .tothetop{
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+
+            width: 60px;
+            height: 60px;
+            background-image: url('../image/Top+2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: .5s;
+            
+        }
+    }
+
+    a:hover .tothetop{
+        background-image: url('../image/Top+.png');
+        transform: scale(1.2);
+
+    }
+}
+
+
+@media (max-width:1200px){
+
+    .top_banner{
+        
+    }
+
+    #seto_art{
+
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .container{
+            width: 100%;
+
+            .txt_group{
+                padding: 0 50px 20px;
+            }
+
+            h5{
+                padding: 10px 50px 0;
+            }
+
+            .swiper-container{
+                width: 800px;
+                margin: auto;
+            }
+        }
+    }
+
+    #season{
+        .container{
+            width: 100%;
+
+            .txt_group{
+                padding: 0 50px;
+            }
+
+            .item_wrap{
+                flex-direction: column;
+            }
+        }
+    }
+
+}
+
+@media (max-width:800px){
+        #seto_art{
+            .container{
+
+                .swiper-container{
+                    width: 400px;
+                }
+            
+            }
+        }
+}

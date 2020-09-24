@@ -1,0 +1,287 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.list_style a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #67737E;
+}
+
+.txt_group {
+  color: #67737E;
+}
+
+.txt_group h2 {
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.txt_group h3 {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.txt_group h4 {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.txt_group h5 {
+  margin: 10px 0;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.txt_group p {
+  margin: 15px 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22.5px;
+}
+
+.container p {
+  color: #67737E;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22.5px;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 0 0.5px 10px lightgray;
+          box-shadow: 0 0.5px 10px lightgray;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+}
+
+nav ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-width: 500px;
+  margin: auto;
+  height: 50px;
+  line-height: 50px;
+}
+
+nav ul li {
+  list-style: none;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+nav ul li:hover a {
+  font-weight: 600;
+  color: #67a130;
+}
+
+.top_banner {
+  padding: 50px 0 0;
+  background-image: url("../image/about_00.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.top_banner .mask {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.top_banner .mask:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#seto_art .container {
+  padding: 50px 0 30px;
+  width: 800px;
+  margin: auto;
+}
+
+#seto_art .container .txt_group {
+  padding: 0 0 10px;
+  text-align: center;
+}
+
+#seto_art .container .swiper-container {
+  width: 100%;
+}
+
+#seto_art .container .swiper-container .swiper-button-next {
+  --swiper-theme-color: white;
+}
+
+#seto_art .container .swiper-container .swiper-button-prev {
+  --swiper-theme-color: white;
+}
+
+#seto_art .container h5 {
+  padding: 10px 0 0;
+  text-align: center;
+}
+
+#season .container {
+  padding: 50px 0 30px;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+#season .container .item_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+
+#season .container .item_wrap .item {
+  margin: 0 5px 30px;
+}
+
+#season .container .item_wrap .item img {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#season .container .item_wrap .item img:hover {
+  opacity: 0.8;
+}
+
+#season .container .item_wrap .item .txt_group h4 {
+  margin: 5px 0 0;
+}
+
+#season .container .item_wrap .item .txt_group p {
+  margin: 0;
+}
+
+footer .info_group {
+  padding: 30px 0;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+footer .info_group .txt_group {
+  margin: 0 0 20px;
+}
+
+footer .info_group .sns a {
+  margin: 0 10px;
+}
+
+footer .info_group .sns a img {
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer .info_group .sns a:hover img {
+  opacity: .6;
+}
+
+footer p {
+  color: #67737E;
+  font-size: 12px;
+  padding: 0 0 10px;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+#top a .tothetop {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../image/Top+2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#top a:hover .tothetop {
+  background-image: url("../image/Top+.png");
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (max-width: 1200px) {
+  #seto_art {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #seto_art .container {
+    width: 100%;
+  }
+  #seto_art .container .txt_group {
+    padding: 0 50px 20px;
+  }
+  #seto_art .container h5 {
+    padding: 10px 50px 0;
+  }
+  #seto_art .container .swiper-container {
+    width: 800px;
+    margin: auto;
+  }
+  #season .container {
+    width: 100%;
+  }
+  #season .container .txt_group {
+    padding: 0 50px;
+  }
+  #season .container .item_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  #seto_art .container .swiper-container {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=about_page.css.map */
