@@ -14,21 +14,36 @@ nav{
     position: fixed;
     top: 0;
 
+
+    #hamburger{
+        display: none;
+    }
+
+    label{
+        padding: 20px;
+        display: none;
+    }
+
+
+
+
     ul{
         padding: 0;
 
         display: flex;
         justify-content: center;
+        margin: auto;
+
         width: 100%;
         min-width: 500px;
-        margin: auto;
-        height: 50px;
+        // height: 50px;
         line-height: 50px;
 
         li{
             list-style: none;
             display: block;
             width: 200px;
+            background-color: #FDFDFD;
             text-align: center;
             // margin: 0 60px;
         }
@@ -44,6 +59,7 @@ nav{
         }
     }
 }
+
 
 
 .top_banner{
@@ -210,7 +226,7 @@ footer{
             width: 100%;
 
             .txt_group{
-                padding: 0px 50px 20px;
+                padding: 0px 20px 20px;
             }
         }
     }
@@ -228,9 +244,40 @@ footer{
                 }
 
                 .txt_group{
-                    padding: 15px 50px;
+                    padding: 15px 10px;
                 }
             }
         }
+    }
+}
+
+@media (max-width:800px){
+
+    nav{
+
+
+        #hamburger:checked + ul{
+            display: block;
+        }
+
+        label{
+            display: block;
+        }
+
+        ul{
+            display: none;
+            min-width: unset;
+
+            li{
+                width: unset;
+            }
+        }
+    }
+
+    footer{
+        .info_group{
+            width: unset;
+        }
+    
     }
 }

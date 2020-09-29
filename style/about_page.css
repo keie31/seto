@@ -70,6 +70,15 @@ nav {
   top: 0;
 }
 
+nav #hamburger {
+  display: none;
+}
+
+nav label {
+  padding: 20px;
+  display: none;
+}
+
 nav ul {
   padding: 0;
   display: -webkit-box;
@@ -78,10 +87,9 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: auto;
   width: 100%;
   min-width: 500px;
-  margin: auto;
-  height: 50px;
   line-height: 50px;
 }
 
@@ -89,6 +97,7 @@ nav ul li {
   list-style: none;
   display: block;
   width: 200px;
+  background-color: #FDFDFD;
   text-align: center;
 }
 
@@ -256,10 +265,10 @@ footer p {
     width: 100%;
   }
   #seto_art .container .txt_group {
-    padding: 0 50px 20px;
+    padding: 0 20px 20px;
   }
   #seto_art .container h5 {
-    padding: 10px 50px 0;
+    padding: 10px 10px 0;
   }
   #seto_art .container .swiper-container {
     width: 800px;
@@ -269,7 +278,7 @@ footer p {
     width: 100%;
   }
   #season .container .txt_group {
-    padding: 0 50px;
+    padding: 0 20px;
   }
   #season .container .item_wrap {
     -webkit-box-orient: vertical;
@@ -280,8 +289,24 @@ footer p {
 }
 
 @media (max-width: 800px) {
+  nav #hamburger:checked + ul {
+    display: block;
+  }
+  nav label {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    min-width: unset;
+  }
+  nav ul li {
+    width: unset;
+  }
   #seto_art .container .swiper-container {
     width: 400px;
+  }
+  footer .info_group {
+    width: unset;
   }
 }
 /*# sourceMappingURL=about_page.css.map */

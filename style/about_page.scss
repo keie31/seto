@@ -10,21 +10,36 @@ nav{
     position: fixed;
     top: 0;
 
+
+    #hamburger{
+        display: none;
+    }
+
+    label{
+        padding: 20px;
+        display: none;
+    }
+
+
+
+
     ul{
         padding: 0;
-        
+
         display: flex;
         justify-content: center;
+        margin: auto;
+
         width: 100%;
         min-width: 500px;
-        margin: auto;
-        height: 50px;
+        // height: 50px;
         line-height: 50px;
 
         li{
             list-style: none;
             display: block;
             width: 200px;
+            background-color: #FDFDFD;
             text-align: center;
             // margin: 0 60px;
         }
@@ -40,6 +55,7 @@ nav{
         }
     }
 }
+
 
 
 
@@ -232,11 +248,11 @@ footer{
             width: 100%;
 
             .txt_group{
-                padding: 0 50px 20px;
+                padding: 0 20px 20px;
             }
 
             h5{
-                padding: 10px 50px 0;
+                padding: 10px 10px 0;
             }
 
             .swiper-container{
@@ -251,7 +267,7 @@ footer{
             width: 100%;
 
             .txt_group{
-                padding: 0 50px;
+                padding: 0 20px;
             }
 
             .item_wrap{
@@ -263,13 +279,42 @@ footer{
 }
 
 @media (max-width:800px){
-        #seto_art{
-            .container{
+    nav{
 
-                .swiper-container{
-                    width: 400px;
-                }
-            
+        #hamburger:checked + ul{
+            display: block;
+        }
+
+        label{
+            display: block;
+        }
+
+        ul{
+            display: none;
+            min-width: unset;
+
+            li{
+                width: unset;
             }
         }
+    }
+
+
+    #seto_art{
+        .container{
+
+            .swiper-container{
+                width: 400px;
+            }
+        
+        }
+    }
+
+
+    footer{
+        .info_group{
+            width: unset;
+        }
+    
+    }
 }
